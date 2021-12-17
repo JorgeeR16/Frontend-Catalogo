@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+
+    <title>Catalogo</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <a class="navbar-brand btn" style="color:#a5a7a7" href="index.html" style="color:#fbffff"> <i
+                class="fa fa-home"></i> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                </li>
+            </ul>
+
+            <div id="botones">
+                <!-- Modal iniciar sesion -->
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="@mdo">Iniciar sesión</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title user-select-none" id="exampleModalLabel">Iniciar sesión</h5>
+                                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" id="form-ini" method="POST">
+                                    <div class="form-group">
+                                        <label for="recipient-name"
+                                            class="col-form-label user-select-none">Correo:</label>
+                                        <input type="email" name="useremail" id="useremailInicio"
+                                            class="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password"
+                                            class="col-form-label user-select-none">Contraseña:</label>
+                                        <div class="input-group-append">
+                                            <input id="passwordInicio" type="Password" Class="form-control">
+                                            <button id="passwordini" class="btn btn-outline-primary" type="button"
+                                                onclick="mostrarPassword1()">
+                                                <span class="fa fa-eye-slash icon"></span> </button>
+                                        </div>
+                                    </div>
+                                    <p class="text-danger text-center" id="warningInici"></p>
+                                    <div class=" form-group  modal-footer">
+                                        <button type="button" class="btn btn-outline-secondary"
+                                            data-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-outline-primary">Ingresar</button>
+                                    </div>
+                                </form>
+                                <div class="form-group text-center">
+                                    <label for="remember-me">
+                                        <span class="user-select-none">¿No tienes una cuenta? <a href="registro.html"
+                                                class="text-info">Crea
+                                                tu
+                                                cuenta aqui</a></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Registrase -->
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal1"
+                    data-whatever="@mdo">Registrase</button>
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title user-select-none" id="exampleModalLabel1">Registrase</h5>
+                                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" id="form" method="POST">
+                                    <div class="form-group">
+                                        <label for="recipient-identification"
+                                            class="col-form-label user-select-none">Identificación:</label>
+                                        <input type="useridentification" name="useridentification"
+                                            id="useridentification" class="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recipient-name "
+                                            class="col-form-label user-select-none">Nombre:</label>
+                                        <input type="username" name="username" id="username" class="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address" class="col-form-label user-select-none">Dirección:</label>
+                                        <input type="text" name="useraddress" id="useraddress" class="form-control" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="cellPhone" class="col-form-label user-select-none">Telefono:</label>
+                                        <input type="number" name="usercellPhone" id="usercellPhone"
+                                            class="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text"
+                                            class="col-form-label user-select-none">Correo:</label>
+                                        <input type="email" name="useremail" id="useremail" class="form-control" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="zone" class="col-form-label user-select-none">Zona:</label>
+                                        <input type="text" name="userezone" id="userzone" class="form-control" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="type" class="col-form-label user-select-none">Tipo:</label>
+                                        <input type="text" name="useretype" id="usertype" class="form-control" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password" class="user-select-none">Contraseña:</label><br />
+                                        <div class="input-group-append">
+                                            <input id="password" type="Password" Class="form-control">
+                                            <button id="show_password" class="btn btn-outline-primary" type="button"
+                                                onclick="mostrarPassword()">
+                                                <span class="fa fa-eye-slash icon"></span> </button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="passwordrepeat" class="user-select-none">Confirmar tu
+                                            Contraseña:</label><br />
+                                        <div class="input-group-append">
+                                            <input id="passwordrepeat" type="Password" Class="form-control">
+                                            <button id="show_repassword" class="btn btn-outline-primary" type="button"
+                                                onclick="mostrarRepassword()">
+                                                <span class="fa fa-eye-slash icon"></span> </button>
+                                        </div>
+                                        <p class="text-danger text-center" id="warning"></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-secondary"
+                                            data-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-outline-primary">Ingresar</button>
+                                    </div>
+                                </form>
+                                <div class="form-group text-center">
+                                    <label for="remember-me ">
+                                        <span class="user-select-none">¿Ya tienes una cuenta? <a
+                                                href="iniciarSesion.html" class="text-info ">Inicia sesion
+                                                aqui</a></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="container-fluid">
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center flex-column "
+                style="background-color: rgb(252, 252, 252);">
+                <img src="/img/sarten.png" class="img-fluid rounded-right user-select-none">
+            </div>
+            <div class="col d-flex justify-content-center align-items-center flex-column" id="information">
+                <h1 class="user-select-none user-select-none">
+                    Farm Sergio Arboleda
+                </h1><br><br>
+                <p class="user-select-none">
+                    Con la sartén por el mango es una empresa Bumanguesa con más de 10 años de trayectoria en la
+                    venta de utensilios de cocina mediante el servicio de venta directa por catalogo, se ubica en el
+                    barrio Diamante II, comuna 10 Provenza, en el sector de la meseta. Actualmente cuenta con más
+                    de 50 empleados entre directos y fuerza de ventas independiente.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/inicioSesion.js"></script>
+    <script type="text/javascript" src="js/crearCuenta.js"></script>
+</body>
+
+</html>

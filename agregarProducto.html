@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styleRegistro.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" context="widht=device-width, initial-scale-1">
+    <title>Catalogo</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand user-select-none" href="paginaP.html">Sartén por el mango</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+
+    <form action="" id="form-producAgregar" method="POST">
+
+
+        <div class="form-center container-sm">
+            <h3 class="text-center user-select-none ">Agrega producto</h3>
+
+            <div class="form-group ">
+                <label for="productreference"class="user-select-none">Referecia</label><br />
+                <input type="text" name="productreference" id="productreference" class="form-control" />
+            </div>
+
+            <div class="form-group ">
+                <label for="productbrand"class="user-select-none">Marca</label><br />
+                <input type="text" name="productbrand" id="productbrand" class="form-control" />
+            </div>
+
+            <div class="form-group ">
+                <label for="productcategory"class="user-select-none">Categoria</label><br />
+                <input type="text" name="productcategory" id="productcategory" class="form-control" />
+            </div>
+
+            <div class="form-group ">
+                <label for="productmaterial"class="user-select-none">Material</label><br />
+                <input type="text" name="productmaterial" id="productmaterial" class="form-control" />
+            </div>
+
+            <div class="form-group ">
+                <label for="productdimencion"class="user-select-none">Dimensión</label><br />
+                <input type="text" name="productdimencion" id="productdimencion" class="form-control" />
+            </div>
+
+            <div class="form-group ">
+                <label for="productdescription"class="user-select-none">Descripción</label><br />
+                <input type="text" name="productdescription" id="productdescription" class="form-control" />
+            </div>
+
+            <div class="form-group ">
+                <label for="productavailability"class="user-select-none">Disponibilidad</label><br />
+                <input type="text" name="productavailability" id="productavailability" class="form-control" />
+            </div>
+
+            <div class="form-group ">
+                <label for="productdprice"class="user-select-none"class="user-select-none">Precio</label><br />
+                <input type="number" name="productdprice" id="productprice" class="form-control" />
+            </div>
+
+            <div class="form-group ">
+                <label for="productquantity"class="user-select-none"class="user-select-none">Cantidad</label><br />
+                <input type="number" name="productdquantity" id="productquantity" class="form-control" />
+            </div>
+
+            <div class="form-group ">
+                <label for="productphotography" class="user-select-none">Forografia</label><br />
+                <input type="text" name="productdquantity" id="productphotography" class="form-control" />
+            </div>
+
+
+
+            <p class="warnings" id="warningProduct"></p>
+
+            <div class="form-group text-center">
+                <button class="btn btn-outline-primary" type="submit">Registrar</button>
+            </div>
+        </div>
+
+    </form>
+    <script type="text/javascript" src="js/agregarProducto.js"></script>
+</body>
+
+</html>

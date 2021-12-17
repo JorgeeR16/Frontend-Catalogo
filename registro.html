@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styleRegistro.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" context="widht=device-width, initial-scale-1">
+    <title>Catalogo</title>
+</head>
+
+<body>
+    <div>
+        <a class="navbar-brand btn btn-outline-primary border border-light" style="color:#a5a7a7" href="index.html"
+            style="color:#fbffff"> <i class="fa fa-home"></i> </a>
+    </div>
+
+
+    <form action="" id="form" method="POST">
+        <div class="form-center container-sm">
+            <h3 class="text-center ">Crear Cuenta</h3>
+            <div class="form-group ">
+                <label for="recipient-identification"
+                class="col-form-label user-select-none">Identificación:</label>
+            <input type="useridentification" name="useridentification"
+                id="useridentification" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="recipient-name "
+                class="col-form-label user-select-none">Nombre:</label>
+            <input type="username" name="username" id="username" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="address" class="col-form-label user-select-none">Dirección:</label>
+            <input type="text" name="useraddress" id="useraddress" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="cellPhone" class="col-form-label user-select-none">Telefono:</label>
+            <input type="number" name="usercellPhone" id="usercellPhone"
+                class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="message-text"
+                class="col-form-label user-select-none">Correo:</label>
+            <input type="email" name="useremail" id="useremail" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="zone" class="col-form-label user-select-none">Zona:</label>
+            <input type="text" name="userezone" id="userzone" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="type" class="col-form-label user-select-none">Tipo:</label>
+            <input type="text" name="useretype" id="usertype" class="form-control" />
+        </div>
+
+
+
+
+
+
+            <div class="form-group">
+                <label for="password">Contraseña:</label><br />
+                <div class="input-group-append">
+                    <input id="password" type="Password" Class="form-control">
+                    <button id="show_password" class="btn btn-outline-primary" type="button"
+                        onclick="mostrarPassword()">
+                        <span class="fa fa-eye-slash icon"></span> </button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="passwordrepeat">Confirmar tu Contraseña:</label><br />
+                <div class="input-group-append">
+                    <input id="passwordrepeat" type="Password" Class="form-control">
+                    <button id="show_repassword" class="btn btn-outline-primary" type="button"
+                        onclick="mostrarRepassword()">
+                        <span class="fa fa-eye-slash icon"></span> </button>
+                </div>
+                <p class="text-danger text-center" id="warning"></p>
+            </div>
+            <div class="form-group text-center">
+                <button class="btn btn-outline-primary" type="submit">Crear</button>
+            </div>
+            <div class="form-group text-center">
+                <label for="remember-me">
+                    <span>¿Ya tienes una cuenta? <a href="iniciarSesion.html" class="text-info">Inicia sesion
+                            aqui</a></span>
+                </label>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript" src="js/crearCuenta.js"></script>
+</body>
+
+</html>

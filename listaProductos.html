@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ppal.css" />
+    <title>Pagina principal</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="paginaP.html">Sartén por el mango</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="table-responsive-sm">
+
+        <div style="text-align: center" id="pintarProductos"></div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-8 mt-3 d-flex  justify-content-center mt-5">
+
+                <div style="text-align: center" id="mensaje"></div>
+            </div>
+            <div class="col-6 col-md-4  mt-1 ">
+                <div class="card-body">
+                    <form>
+                        <div class="mt-1  bg-dark text-white pl-2 pb-2 pr-2">
+                            <label for="productbrand" class="user-select-none">Marca</label><br />
+                            <input type="text" name="productbrand" id="productbrand" class="form-control" />
+                        </div>
+                        <div class="mt-1  bg-dark text-white pl-2 pb-2 pr-2">
+                            <label for="productcategory" class="user-select-none">Categoria</label><br />
+                            <input type="text" name="productcategory" id="productcategory" class="form-control" />
+                        </div>
+                        <div class="mt-1  bg-dark text-white pl-2 pb-2 pr-2">
+                            <label for="productmaterial" class="user-select-none">Material</label><br />
+                            <input type="text" name="productmaterial" id="productmaterial" class="form-control" />
+                        </div>
+                        <div class="mt-1  bg-dark text-white pl-2 pb-2 pr-2">
+                            <label for="productdimencion" class="user-select-none">Dimensión</label><br />
+                            <input type="text" name="productdimencion" id="productdimencion" class="form-control" />
+                        </div>
+                        <div class="mt-1  bg-dark text-white pl-2 pb-2 pr-2">
+                            <label for="productdescription" class="user-select-none">Descripción</label><br />
+                            <input type="text" name="productdescription" id="productdescription" class="form-control" />
+                        </div>
+                        <div class="mt-1  bg-dark text-white pl-2 pb-2 pr-2">
+                            <label for="productavailability" class="user-select-none">Disponibilidad</label><br />
+                            <input type="text" name="productavailability" id="productavailability"
+                                class="form-control" />
+                        </div>
+                        <div class="mt-1  bg-dark text-white pl-2 pb-2 pr-2">
+                            <label for="productdprice" class="user-select-none"
+                                class="user-select-none">Precio</label><br />
+                            <input type="number" name="productdprice" id="productprice" class="form-control" />
+                        </div>
+                        <div class="mt-1  bg-dark text-white pl-2 pb-2 pr-2">
+                            <label for="productquantity" class="user-select-none"
+                                class="user-select-none">Cantidad</label><br />
+                            <input type="number" name="productdquantity" id="productquantity" class="form-control" />
+                        </div>
+                        <div class="mt-1  bg-dark text-white pl-2 pb-2 pr-2">
+                            <label for="productphotography" class="user-select-none">Forografia</label><br />
+                            <input type="text" name="productdquantity" id="productphotography" class="form-control" />
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/ListarProducto.js"></script>
+
+</body>
+
+</html>

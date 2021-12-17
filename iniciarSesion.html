@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styleRegistro.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" context="widht=device-width, initial-scale-1">
+    <title>Catalogo</title>
+</head>
+
+<body>
+    <form action="" id="form-ini" method="POST">
+        <div >
+            <a class="navbar-brand btn btn-outline-primary border border-light" style="color:#a5a7a7" href="index.html" style="color:#fbffff" > <i 
+                    class="fa fa-home"></i> </a>
+        </div>
+
+        <div class="form-center container-sm">
+            <h3 class="text-center ">Iniciar sesión</h3>
+            <div class="form-group ">
+                <label for="useremail">E-mail:</label><br />
+                <input type="email" name="useremail" id="useremailInicio" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="password" >Contraseña:</label><br />
+                <div class="input-group-append">
+                    <input id="passwordInicio" type="Password" Class="form-control">
+                    <button id="passwordini" class="btn btn-outline-primary" type="button" onclick="mostrarPassword()">
+                        <span class="fa fa-eye-slash icon"></span> </button>
+                </div>
+            </div>
+            <p class="warnings" id="warningInici"></p>
+
+            <div class="form-group text-center">
+                <button class="btn btn-outline-primary" type="submit">Ingresar</button>
+            </div>
+            <div class="form-group text-center">
+                <label for="remember-me">
+                    <span>No tienes una cuenta? <a href="registro.html" class="text-info">Crea tu cuenta aqui</a></span>
+                </label>
+            </div>
+        </div>
+
+    </form>
+    <script type="text/javascript" src="js/inicioSesion.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ppal.css" />
+    <title>Pagina principal</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="paginaP.html">Sartén por el mango</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Productos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="agregarProducto.html">Agregar producto</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="listaProductos.html">Lista de productos</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Usuarios
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="agregarUsuario.html">Agregar usuario</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="listaUsuarios.html">Lista de usuarios</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal1"
+            data-whatever="@mdo" id="botonOn" onclick="FbotonOn()"></button>
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel1"></h5>
+                        <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" id="persona" method="POST">
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">¿Deseas actualizar tus datos?</label>
+                                <button class="btn btn-outline-primary" onclick="Actualizardatos()">Actualizar</button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-danger btn-lg btn-block"
+                                    data-dismiss="modal" onclick="Cerrarsesion()">Cerrar sesion</button>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="container-fluid">
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center flex-column "
+                style="background-color: rgb(252, 252, 252);">
+                <img src="/img/ubicacion.PNG" class="img-fluid rounded-right">
+            </div>
+            <div class="col d-flex justify-content-center align-items-center flex-column" id="information">
+                <h1 class="user-select-none">
+
+                </h1><br><br>
+                <p>
+                    Con la sartén por el mango cuenta con una fuerza de ventas zonificada a cargo de un coordinador
+                    de Zona. Un asesor está autorizado para vender en una zona, la cual es responsabilidad de un
+                    coordinador zonal. El coordinador está a cargo de una única zona, y es el responsable de incentivar
+                    las ventas, y gestionar los pedidos que allí se realicen.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/pPrincipal.js"></script>
+
+</body>
+
+</html>

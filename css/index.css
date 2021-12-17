@@ -1,0 +1,18 @@
+.col{
+  width: 300px;
+  text-align: justify;
+  font-size: x-large;
+}
+  body{
+  
+    background-repeat: no-repeat;
+    background-size: 1600px;
+
+  }
+
+#information{
+  height: 680px;
+  margin-right: 30px;
+  margin-top: 90px;
+}
+
